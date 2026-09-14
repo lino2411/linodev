@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lino Quito | Desarrollador Web Full Stack</title>
+
+    <meta name="description"
+        content="Portafolio de Lino Quito, desarrollador web especializado en interfaces modernas, sistemas administrativos, inventarios y soluciones digitales.">
+    <meta name="author" content="Lino Quito">
+    <meta name="theme-color" content="#123b59">
+    <meta property="og:title" content="Lino Quito | Desarrollador Web Full Stack">
+    <meta property="og:description" content="Conoce mis proyectos, habilidades y servicios de desarrollo web.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/logo/logo-linodev.jpg">
+
+    <link rel="icon" href="assets/logo/logo-linodev.jpg" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <a href="#contenido-principal" class="enlace-saltar">Ir al contenido principal</a>
+    <header class="encabezado" id="inicio">
+        <nav class="navegacion">
+            <div class="contenedor navegacion-contenido">
+                <a href="#inicio" class="marca" aria-label="LinoDev, ir al inicio">
+                    <span class="marco-logo-navegacion">
+                        <img src="assets/logo/logo-linodev.jpg" alt="LinoDev Web Developer" class="imagen-logo"
+                            width="58" height="58">
+                    </span>
+                </a>
+                <div class="barra-pestanas">
+
+                    <button class="boton-menu" type="button" aria-label="Abrir menú de navegación"
+                        aria-controls="enlaces-navegacion" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <div class="enlaces-navegacion" id="enlaces-navegacion">
+                        <a href="#inicio" class="enlace-navegacion activo"> Inicio</a>
+                        <a href="#sobre-mi" class="enlace-navegacion"> Sobre mí</a>
+                        <a href="#especialidades" class="enlace-navegacion"> Especialidades</a>
+                        <a href="#proyectos" class="enlace-navegacion"> Proyectos</a>
+                        <a href="#proceso" class="enlace-navegacion"> Proceso</a>
+                        <a href="#servicios" class="enlace-navegacion"> Servicios</a>
+                        <a href="#contacto" class="enlace-navegacion"> Contacto </a>
+                    </div>
+                </div>
+                <div class="acciones-navegacion">
+                    <button class="boton-tema" id="boton-tema" type="button" aria-label="Cambiar tema visual"
+                        aria-pressed="false">
+                        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                    </button>
+
+                    <a href="#contacto" class="boton boton-pequeno boton-navegacion">
+                        Hablemos
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="portada" aria-labelledby="titulo-portada">
+            <div class="contenedor portada-contenido">
+                <div class="texto-portada">
+                    <p class="etiqueta-portada">Desarrollador web frontend</p>
+                    <h1 id="titulo-portada">Creo soluciones web claras, rápidas y preparadas para crecer.</h1>
+                    <p class="descripcion-portada">Soy Lino Quito, desarrollador web enfocado en crear interfaces
+                        modernas y sistemas digitales para negocios, inventarios, ventas y procesos administrativos.</p>
+
+                    <div class="acciones-portada">
+                        <a href="#proyectos" class="boton boton-principal">Ver mis proyectos <i
+                                class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#contacto" class="boton boton-secundario">Contactarme</a>
+                    </div>
+
+                    <div class="datos-portada">
+                        <div class="dato-portada"><strong>Frontend</strong><span>Interfaces modernas</span></div>
+                        <div class="dato-portada"><strong>Backend</strong><span>Sistemas organizados</span></div>
+                        <div class="dato-portada"><strong>Enfoque</strong><span>Calidad y rendimiento</span></div>
+                    </div>
+                </div>
+
+                <div class="visual-portada">
+                    <div class="marco-logo-portada">
+                        <div class="linea-decorativa linea-uno"></div>
+                        <div class="linea-decorativa linea-dos"></div>
+                        <span class="circulo-logo-portada">
+                            <img src="assets/logo/logo-linodev.jpg" alt="Identidad visual de LinoDev"
+                                class="logo-portada">
+                        </span>
+                        <span class="etiqueta-visual etiqueta-superior">Código</span>
+                        <span class="etiqueta-visual etiqueta-inferior">Diseño</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main id="contenido-principal">
+        <section class="seccion seccion-sobre-mi" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+            <div class="contenedor rejilla-sobre-mi">
+                <div class="encabezado-seccion">
+                    <p class="etiqueta-seccion">Sobre mí</p>
+                    <h2 id="titulo-sobre-mi">Desarrollo con propósito y aprendizaje constante.</h2>
+                </div>
+                <div class="contenido-sobre-mi">
+                    <p>Me llamo Lino Quito y soy desarrollador web. Me interesa construir soluciones digitales claras
+                        para el usuario, ordenadas en el código y sostenibles para el negocio.</p>
+                    <p>Trabajo en proyectos relacionados con comercio electrónico, inventarios, sistemas
+                        administrativos, autenticación, bases de datos y diseño de interfaces.</p>
+                    <p>Mi objetivo es seguir creciendo como profesional y convertir cada proyecto en una oportunidad
+                        para mejorar la experiencia, el rendimiento y la calidad técnica.</p>
+                    <a href="#contacto" class="enlace-destacado">Trabajemos juntos <i class="fa-solid fa-arrow-right"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-especialidades" id="especialidades" aria-labelledby="titulo-especialidades">
+            <div class="contenedor">
+                <div class="encabezado-seccion centrado">
+                    <p class="etiqueta-seccion">Especialidades</p>
+                    <h2 id="titulo-especialidades">Las áreas en las que puedo ayudarte.</h2>
+                </div>
+                <div class="rejilla-especialidades">
+                    <article class="tarjeta-especialidad"><span class="numero-tarjeta">01</span><i
+                            class="fa-solid fa-code icono-tarjeta" aria-hidden="true"></i>
+                        <h3>Desarrollo frontend</h3>
+                        <p>Interfaces responsive, accesibles y organizadas con HTML, CSS, JavaScript y React.</p>
+                        <ul class="lista-tecnologias">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>TailwindCSS</li>
+                            <li>Boostsrap5</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                        </ul>
+                    </article>
+                    <article class="tarjeta-especialidad"><span class="numero-tarjeta">02</span><i
+                            class="fa-solid fa-database icono-tarjeta" aria-hidden="true"></i>
+                        <h3>Sistemas y bases de datos</h3>
+                        <p>Aplicaciones CRUD, relaciones, inventarios, autenticación y gestión de información.</p>
+                        <ul class="lista-tecnologias">
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>Supabase</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </article>
+                    <article class="tarjeta-especialidad"><span class="numero-tarjeta">03</span><i
+                            class="fa-solid fa-gauge-high icono-tarjeta" aria-hidden="true"></i>
+                        <h3>Rendimiento y calidad</h3>
+                        <p>Sitios rápidos, SEO técnico, diseño responsive y experiencias fáciles de mantener.</p>
+                        <ul class="lista-tecnologias">
+                            <li>SEO</li>
+                            <li>Accesibilidad</li>
+                            <li>Responsive</li>
+                            <li>Optimización</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-proyectos" id="proyectos" aria-labelledby="titulo-proyectos">
+            <div class="contenedor">
+                <div class="encabezado-seccion encabezado-dividido">
+                    <div>
+                        <p class="etiqueta-seccion">Proyectos seleccionados</p>
+                        <h2 id="titulo-proyectos">Proyectos que muestran mi forma de trabajar.</h2>
+                    </div>
+                    <p class="texto-encabezado">Cada proyecto representa una oportunidad para resolver un problema real
+                        mediante tecnología.</p>
+                </div>
+
+                <div class="rejilla-proyectos">
+                    <article class="tarjeta-proyecto">
+                        <div class="imagen-proyecto imagen-ecommerce"><span class="estado-proyecto">En desarrollo</span>
+                            <div class="vista-proyecto"><span>Ecommerce</span></div>
+                        </div>
+                        <div class="contenido-proyecto">
+                            <p class="tipo-proyecto">Tienda web</p>
+                            <h3>Ecommerce Elisyn Soya</h3>
+                            <p>Tienda responsive con catálogo, filtros, carrito persistente, formulario de contacto y
+                                estructura preparada para PHP y MySQL.</p>
+                            <ul class="tecnologias-proyecto">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>SEO</li>
+                            </ul>
+                            <div class="enlaces-proyecto">
+                                <a href="https://web-e-comerce-eight.vercel.app/" class="enlace-proyecto"
+                                    aria-label="Ver demo del ecommerce Elisyn Soya" target="_blank"
+                                    rel="noopener noreferrer">
+                                    Ver demo
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="tarjeta-proyecto">
+                        <div class="imagen-proyecto imagen-inventario"><span class="estado-proyecto">Próximamente</span>
+                            <div class="vista-proyecto"><span>Inventario</span></div>
+                        </div>
+                        <div class="contenido-proyecto">
+                            <p class="tipo-proyecto">Sistema administrativo</p>
+                            <h3>Sistema de inventario y ventas</h3>
+                            <p>Aplicación orientada al control de productos, stock, ventas, clientes y operaciones
+                                diarias.</p>
+                            <ul class="tecnologias-proyecto">
+                                <li>React</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                                <li>CRUD</li>
+                            </ul>
+                            <div class="enlaces-proyecto"><a href="#" class="enlace-proyecto"
+                                    aria-label="Demo próximamente del sistema de inventario">Demo próximamente <i
+                                        class="fa-solid fa-clock" aria-hidden="true"></i></a></div>
+                        </div>
+                    </article>
+                    <article class="tarjeta-proyecto">
+                        <div class="imagen-proyecto imagen-textil"><span class="estado-proyecto">En planificación</span>
+                            <div class="vista-proyecto"><span>Gestión textil</span></div>
+                        </div>
+                        <div class="contenido-proyecto">
+                            <p class="tipo-proyecto">Aplicación especializada</p>
+                            <h3>Gestión de patrones textiles</h3>
+                            <p>Proyecto enfocado en organizar patrones, diseños y procesos relacionados con trabajo
+                                textil.</p>
+                            <ul class="tecnologias-proyecto">
+                                <li>React</li>
+                                <li>Diseño UI</li>
+                                <li>Base de datos</li>
+                                <li>Gestión</li>
+                            </ul>
+                            <div class="enlaces-proyecto">
+                                <a href="#" class="enlace-proyecto"
+                                    aria-label="Demo próximamente del proyecto textil">Demo próximamente
+                                    <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-proceso" id="proceso" aria-labelledby="titulo-proceso">
+            <div class="contenedor rejilla-proceso">
+                <div class="encabezado-seccion">
+                    <p class="etiqueta-seccion">Proceso de trabajo</p>
+                    <h2 id="titulo-proceso">Del problema a una solución funcional.</h2>
+                    <p>Trabajo cada proyecto por etapas para mantener claridad, orden y control sobre los resultados.
+                    </p>
+                </div>
+                <div class="lista-proceso">
+                    <article class="paso-proceso"><span>01</span>
+                        <div>
+                            <h3>Comprender</h3>
+                            <p>Analizo el problema, los usuarios y los objetivos del proyecto.</p>
+                        </div>
+                    </article>
+                    <article class="paso-proceso"><span>02</span>
+                        <div>
+                            <h3>Planificar</h3>
+                            <p>Defino estructura, tecnologías, módulos y prioridades.</p>
+                        </div>
+                    </article>
+                    <article class="paso-proceso"><span>03</span>
+                        <div>
+                            <h3>Desarrollar</h3>
+                            <p>Construyo la interfaz y la lógica con código claro y reutilizable.</p>
+                        </div>
+                    </article>
+                    <article class="paso-proceso"><span>04</span>
+                        <div>
+                            <h3>Probar y mejorar</h3>
+                            <p>Reviso responsive, accesibilidad, rendimiento y funcionamiento.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-servicios" id="servicios" aria-labelledby="titulo-servicios">
+            <div class="contenedor">
+                <div class="encabezado-seccion centrado">
+                    <p class="etiqueta-seccion">Servicios</p>
+                    <h2 id="titulo-servicios">Soluciones para mejorar tu presencia digital.</h2>
+                </div>
+                <div class="rejilla-servicios">
+                    <article class="tarjeta-servicio"><i class="fa-solid fa-laptop-code icono-servicio"
+                            aria-hidden="true"></i>
+                        <h3>Desarrollo web</h3>
+                        <p>Creación de páginas y sistemas adaptados a las necesidades reales de cada proyecto.</p>
+                    </article>
+                    <article class="tarjeta-servicio"><i class="fa-solid fa-pen-ruler icono-servicio"
+                            aria-hidden="true"></i>
+                        <h3>Diseño de interfaces</h3>
+                        <p>Interfaces ordenadas, modernas y fáciles de utilizar en diferentes dispositivos.</p>
+                    </article>
+                    <article class="tarjeta-servicio"><i class="fa-solid fa-chart-line icono-servicio"
+                            aria-hidden="true"></i>
+                        <h3>Optimización y SEO</h3>
+                        <p>Mejoras de rendimiento, estructura, accesibilidad y posicionamiento técnico.</p>
+                    </article>
+                    <article class="tarjeta-servicio"><i class="fa-solid fa-screwdriver-wrench icono-servicio"
+                            aria-hidden="true"></i>
+                        <h3>Mantenimiento</h3>
+                        <p>Correcciones, mejoras y evolución continua para mantener el proyecto saludable.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-beneficios" id="beneficios" aria-labelledby="titulo-beneficios">
+            <div class="contenedor rejilla-beneficios">
+                <div class="contenido-beneficios">
+                    <p class="etiqueta-seccion">Lo que obtendrás</p>
+                    <h2 id="titulo-beneficios">Una solución pensada para tus objetivos.</h2>
+                    <p>No se trata solo de crear una página bonita. El objetivo es construir una experiencia clara,
+                        rápida y útil para las personas que visitan tu negocio.</p>
+                    <p>Cada decisión de diseño y desarrollo debe responder a una necesidad concreta: mejorar la
+                        navegación, facilitar el contacto, presentar mejor tus servicios o ayudarte a vender.</p><a
+                        href="#contacto" class="enlace-destacado">Conversemos sobre tu proyecto <i
+                            class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="lista-beneficios">
+                    <article class="item-beneficio"><span class="numero-beneficio">01</span>
+                        <div>
+                            <h3>Optimización para dispositivos móviles</h3>
+                            <p>Diseño adaptable para celulares, tablets y computadoras sin perder claridad.</p>
+                        </div><i class="fa-solid fa-mobile-screen-button icono-beneficio" aria-hidden="true"></i>
+                    </article>
+                    <article class="item-beneficio"><span class="numero-beneficio">02</span>
+                        <div>
+                            <h3>Experiencia de usuario cuidada</h3>
+                            <p>Navegación sencilla para que el visitante encuentre rápidamente lo que necesita.</p>
+                        </div><i class="fa-solid fa-route icono-beneficio" aria-hidden="true"></i>
+                    </article>
+                    <article class="item-beneficio"><span class="numero-beneficio">03</span>
+                        <div>
+                            <h3>Velocidad y rendimiento</h3>
+                            <p>Imágenes, recursos y estructura optimizados para una navegación estable.</p>
+                        </div><i class="fa-solid fa-gauge-high icono-beneficio" aria-hidden="true"></i>
+                    </article>
+                    <article class="item-beneficio"><span class="numero-beneficio">04</span>
+                        <div>
+                            <h3>Optimización SEO</h3>
+                            <p>Estructura preparada para que los buscadores comprendan mejor el contenido.</p>
+                        </div><i class="fa-solid fa-magnifying-glass-chart icono-beneficio" aria-hidden="true"></i>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-contacto" id="contacto" aria-labelledby="titulo-contacto">
+            <div class="contenedor rejilla-contacto">
+                <div class="encabezado-seccion">
+                    <p class="etiqueta-seccion">Contacto</p>
+                    <h2 id="titulo-contacto">¿Tienes una idea o un proyecto?</h2>
+                    <p>Cuéntame qué necesitas y conversemos sobre la mejor forma de convertirlo en una solución web.</p>
+                    <div class="datos-contacto">
+                        <a href="mailto:linodev12@gmail.com" class="dato-contacto">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            <span>linodev12@gmail.com</span>
+                        </a>
+                        <a href="https://wa.me/51927291508" class="dato-contacto" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://www.google.com/maps/place/Cusco,+Per%C3%BA" class="dato-contacto"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            <span>Cusco, Perú</span>
+                        </a>
+                    </div>
+                </div>
+                <form id="formulario-contacto" class="formulario-contacto">
+                    <div class="grupo-formulario">
+                        <label for="nombre"> Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name"
+                            minlength="3" maxlength="80" required>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="celular"> Número de celular</label>
+                        <input type="tel" id="celular" name="celular" placeholder="+51 999 999 999" autocomplete="tel"
+                            inputmode="tel" minlength="7" maxlength="20" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="asunto"> Asunto</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value=""> Selecciona una opción</option>
+                            <option value="Desarrollo web"> Desarrollo web</option>
+                            <option value="Sistema administrativo"> Sistema administrativo</option>
+                            <option value="Tienda ecommerce"> Tienda ecommerce </option>
+                            <option value="Mantenimiento"> Mantenimiento o mejora</option>
+                            <option value="Consulta general"> Consulta general </option>
+                        </select>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="mensaje"> Cuéntame sobre tu proyecto
+                        </label>
+                        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe brevemente qué necesitas"
+                            minlength="10" maxlength="1200" required></textarea>
+                    </div>
+                    <button type="submit" class="boton boton-principal">
+                        Contactarme por WhatsApp
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                    </button>
+                    <p id="estado-formulario" class="estado-formulario" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor contenido-pie">
+            <div class="marca-pie"><span class="marco-logo-pie"><img src="assets/logo/logo-linodev.jpg"
+                        alt="LinoDev Web Developer" class="imagen-logo-pie" width="150" height="88"></span>
+                <p>Desarrollo web con propósito, orden y mejora continua.</p>
+            </div>
+            <div class="enlaces-sociales">
+                <!-- <a href="https://github.com/lino2411" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a> -->
+                <a href="https://www.facebook.com/share/1VGrE5LJX3/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Facebook">
+                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/LinoQV_Dev/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.tiktok.com/@lino_qv" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                </a>
+                <a href="https://wa.me/51927291508" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div class="contenedor pie-inferior">
+            <p>© <span id="anio-actual"></span> Lino Quito. Todos los derechos reservados.</p><a href="#inicio">Volver
+                arriba <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
