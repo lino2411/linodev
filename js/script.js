@@ -463,6 +463,33 @@ function iniciarFormulario() {
     );
 }
 
+// =====================================================
+// Botón "Ver más proyectos"
+// =====================================================
+
+const botonVerProyectos = document.getElementById('boton-ver-proyectos');
+const rejillaProyectos = document.getElementById('rejilla-proyectos');
+
+if (botonVerProyectos && rejillaProyectos) {
+    botonVerProyectos.addEventListener('click', () => {
+        const estaAbierto = rejillaProyectos.classList.toggle('mostrar-todos');
+
+        botonVerProyectos.classList.toggle('esta-abierto', estaAbierto);
+        botonVerProyectos.setAttribute('aria-expanded', String(estaAbierto));
+
+        botonVerProyectos.innerHTML = estaAbierto
+            ? 'Ver menos proyectos <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>'
+            : 'Ver más proyectos <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>';
+
+        if (!estaAbierto) {
+            document.getElementById('proyectos')?.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+}
+
 /*
 |--------------------------------------------------------------------------
 | Año automático

@@ -252,29 +252,56 @@ p {
     transform: translateY(-2px);
 }
 
+/* ==========================================================
+   Botón menú móvil: hamburguesa → X
+   ========================================================== */
 .boton-menu {
+    position: relative;
     display: none;
     width: 42px;
     height: 42px;
-    place-items: center;
+    padding: 0;
+    border: 0;
     border-radius: 50%;
     background: transparent;
+    color: #ffffff;
     cursor: pointer;
 }
 
+/* Las tres líneas se posicionan por separado */
 .boton-menu span {
+    position: absolute;
+    left: 50%;
     display: block;
     width: 22px;
     height: 2px;
     border-radius: var(--radio-redondo);
-    background: #ffffff;
+    background: currentColor;
+    transform: translateX(-50%);
+    transform-origin: center;
     transition:
+        top var(--transicion),
         transform var(--transicion),
         opacity var(--transicion);
 }
 
+/* Estado cerrado: las tres rayas */
+.boton-menu span:nth-child(1) {
+    top: 14px;
+}
+
+.boton-menu span:nth-child(2) {
+    top: 20px;
+}
+
+.boton-menu span:nth-child(3) {
+    top: 26px;
+}
+
+/* Estado abierto: X centrada */
 .boton-menu.abierto span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
+    top: 20px;
+    transform: translateX(-50%) rotate(45deg);
 }
 
 .boton-menu.abierto span:nth-child(2) {
@@ -282,7 +309,8 @@ p {
 }
 
 .boton-menu.abierto span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
+    top: 20px;
+    transform: translateX(-50%) rotate(-45deg);
 }
 
 /* Botones */
@@ -372,6 +400,11 @@ body.dark .lista-tecnologias li, body.dark .tecnologias-proyecto li { background
 .tarjeta-proyecto:hover { box-shadow: var(--sombra-media); transform: translateY(-7px); }
 .imagen-proyecto { position: relative; display: flex; min-height: 205px; align-items: flex-end; padding: 20px; overflow: hidden; }
 .imagen-ecommerce { background: linear-gradient(135deg, rgba(18,59,89,.88), rgba(45,167,160,.7)), url('../assets/img/ecomerce.png') center / cover; }
+.imagen-gymdary { background: linear-gradient(135deg, rgba(18,59,89,.88), rgba(45,167,160,.7)), url('../assets/img/portada gym dary.png') center / cover; }
+.imagen-webcuscosmile { background: linear-gradient(135deg, rgba(18,59,89,.88), rgba(45,167,160,.7)), url('../assets/img/portada web cusco smile.png') center / cover; }
+.imagen-llamaassul { background: linear-gradient(135deg, rgba(18,59,89,.88), rgba(45,167,160,.7)), url('../assets/img/portada llama assul.png') center / cover; }
+.imagen-perfilysaura { background: linear-gradient(135deg, rgba(18,59,89,.88), rgba(45,167,160,.7)), url('../assets/img/portada card ysaura.png') center / cover; }
+.imagen-analistaabel { background: linear-gradient(135deg, rgba(18,59,89,.88), rgba(45,167,160,.7)), url('../assets/img/portada abel analista.png') center / cover; }
 .imagen-inventario { background: linear-gradient(135deg, rgba(11,38,59,.92), rgba(242,139,34,.7)), url('../assets/img/portada.jpg') center / cover; }
 .imagen-textil { background: linear-gradient(135deg, rgba(45,167,160,.85), rgba(18,59,89,.8)), url('../assets/img/portada.jpg') center / cover; }
 .estado-proyecto { position: absolute; top: 17px; left: 17px; padding: 6px 10px; border-radius: var(--radio-redondo); background: rgba(255,255,255,.92); color: var(--azul-marino); font-size: .66rem; font-weight: 800; }
@@ -384,6 +417,92 @@ body.dark .contenido-proyecto h3 { color: var(--texto); }
 .enlaces-proyecto { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 19px; }
 .enlace-proyecto { display: inline-flex; align-items: center; gap: 7px; color: var(--naranja-oscuro); font-size: .78rem; font-weight: 800; }
 .enlace-proyecto:hover { color: var(--turquesa); }
+
+.proyecto-oculto {
+  display: none;
+}
+
+.rejilla-proyectos.mostrar-todos .proyecto-oculto {
+  display: block;
+  animation: aparecer-proyecto 0.35s ease both;
+}
+
+.acciones-proyectos {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.25rem;
+}
+
+.boton-ver-proyectos {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: auto;
+  min-height: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: #39c6c8;
+  background: transparent;
+  box-shadow: none;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  cursor: pointer;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.boton-ver-proyectos:hover,
+.boton-ver-proyectos:focus-visible {
+  color: #f47721;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  transform: translateX(4px);
+}
+
+.boton-ver-proyectos:focus-visible {
+  outline: 2px solid #39c6c8;
+  outline-offset: 5px;
+}
+
+.boton-ver-proyectos i {
+  margin-left: 0;
+  color: currentColor;
+  transition: transform 0.25s ease;
+}
+
+.boton-ver-proyectos.esta-abierto i {
+  transform: rotate(180deg);
+}
+
+.boton-ver-proyectos.esta-abierto:hover i {
+  transform: rotate(180deg) translateX(2px);
+}
+
+@keyframes aparecer-proyecto {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .acciones-proyectos {
+    margin-top: 1.5rem;
+  }
+
+  .boton-ver-proyectos {
+    width: 100%;
+  }
+}
 
 /* Proceso */
 .seccion-proceso { background: var(--azul-profundo); color: #ffffff; }
@@ -758,11 +877,11 @@ body {
     }
 
     .boton-menu {
-        display: grid;
+        display: block;
         flex: 0 0 42px;
         width: 42px;
         height: 42px;
-        place-items: center;
+        /* place-items: center; */
     }
 
     .enlaces-navegacion {
