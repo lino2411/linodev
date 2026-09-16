@@ -430,7 +430,7 @@ body.dark .contenido-proyecto h3 { color: var(--texto); }
 .acciones-proyectos {
   display: flex;
   justify-content: center;
-  margin-top: 2.25rem;
+  margin-top: 2.5rem;
 }
 
 .boton-ver-proyectos {
@@ -442,7 +442,7 @@ body.dark .contenido-proyecto h3 { color: var(--texto); }
   padding: 0;
   border: 0;
   border-radius: 0;
-  color: #39c6c8;
+  color: var(--naranja);
   background: transparent;
   box-shadow: none;
   font-size: 1rem;
@@ -456,7 +456,7 @@ body.dark .contenido-proyecto h3 { color: var(--texto); }
 
 .boton-ver-proyectos:hover,
 .boton-ver-proyectos:focus-visible {
-  color: #f47721;
+  color: var(--turquesa-claro);
   background: transparent;
   border: 0;
   box-shadow: none;
